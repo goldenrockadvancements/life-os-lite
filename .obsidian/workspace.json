@@ -1,0 +1,122 @@
+{
+  "main": {
+    "id": "9a1c000000000001",
+    "type": "split",
+    "direction": "vertical",
+    "children": [
+      {
+        "id": "9a1c000000000002",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9a1c000000000003",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Home.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Home"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "left": {
+    "id": "9a1c000000000004",
+    "type": "split",
+    "direction": "horizontal",
+    "width": 300,
+    "children": [
+      {
+        "id": "9a1c000000000005",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9a1c000000000006",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "9a1c000000000007",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": ""
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "9a1c000000000008",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "right": {
+    "id": "9a1c000000000009",
+    "type": "split",
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true,
+    "children": [
+      {
+        "id": "9a1c00000000000a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9a1c00000000000b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Home.md",
+                "collapseAll": false
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "9a1c00000000000c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Home.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "active": "9a1c000000000003",
+  "lastOpenFiles": [
+    "Home.md"
+  ]
+}

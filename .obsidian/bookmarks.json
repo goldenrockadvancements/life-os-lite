@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "type": "file",
+      "path": "Home.md",
+      "title": "Today"
+    },
+    {
+      "type": "file",
+      "path": "Start Here.md"
+    },
+    {
+      "type": "file",
+      "path": "Bases/Tasks.base",
+      "title": "Tasks"
+    },
+    {
+      "type": "file",
+      "path": "Bases/Inbox.base",
+      "title": "Inbox"
+    },
+    {
+      "type": "file",
+      "path": "04 Routines/Reset when overwhelmed.md",
+      "title": "Reset when overwhelmed"
+    }
+  ]
+}

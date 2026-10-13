@@ -1,0 +1,8 @@
+/* Golden Rock vault style. Turn it off in Settings > Appearance > CSS snippets if you prefer plain Obsidian. */
+.dashboard { --file-line-width: 1180px; }
+.dashboard .metadata-container { display: none !important; }
+.dashboard h2 { margin-top: 1.4em; padding-bottom: .25em; border-bottom: 1px solid var(--background-modifier-border); }
+.dashboard .internal-embed .bases-view, .dashboard .internal-embed .bases-embed { max-height: 460px; }
+.callout[data-callout="start"] { --callout-color: 184, 137, 47; --callout-icon: lucide-rocket; }
+.callout[data-callout="sample"] { --callout-color: 120, 120, 135; --callout-icon: lucide-flask-conical; }
+.callout[data-callout="golden"] { --callout-color: 184, 137, 47; --callout-icon: lucide-gem; }

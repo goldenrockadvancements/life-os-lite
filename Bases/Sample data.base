@@ -1,0 +1,18 @@
+filters:
+  and:
+  - '!file.inFolder("Templates")'
+  - file.hasTag("sample")
+properties:
+  file.name:
+    displayName: Note
+  file.folder:
+    displayName: Folder
+  note.type:
+    displayName: Type
+views:
+- type: table
+  name: Sample notes
+  order:
+  - file.name
+  - file.folder
+  - type

@@ -1,0 +1,140 @@
+filters:
+  and:
+  - '!file.inFolder("Templates")'
+  - type == "task"
+formulas:
+  size: if(!minutes, "", if(minutes <= 5, "⚡ 5 min", if(minutes <= 15, "15 min", if(minutes <= 30, "30 min", "1 hr+"))))
+  when: if(!due, "", if(date(due) < today(), "🔴 Overdue", if(date(due) == today(), "Today", if((date(due) - today()).days.round(0) <= 7, "This week", "Later"))))
+  effort: if(energy == "Low", 1, if(energy == "Medium", 2, 3))
+properties:
+  formula.size:
+    displayName: Time
+  file.name:
+    displayName: Task
+  note.energy:
+    displayName: Energy
+  note.goal:
+    displayName: Goal
+  note.status:
+    displayName: Status
+  formula.when:
+    displayName: When
+  note.area:
+    displayName: Area
+  note.due:
+    displayName: Due
+  note.done_on:
+    displayName: Done on
+views:
+- type: table
+  name: Now
+  filters:
+    and:
+    - status == "Doing"
+  order:
+  - file.name
+  - formula.size
+  - energy
+  - goal
+- type: table
+  name: Focus today
+  filters:
+    and:
+    - status != "Done"
+    - focus == true
+  order:
+  - file.name
+  - status
+  - formula.size
+  - energy
+  - formula.when
+  sort:
+  - property: formula.effort
+    direction: ASC
+- type: table
+  name: Quick wins
+  filters:
+    and:
+    - status != "Done"
+    - status != "Waiting"
+    - if(minutes, minutes <= 15, false)
+  order:
+  - file.name
+  - formula.size
+  - energy
+  - area
+  sort:
+  - property: minutes
+    direction: ASC
+- type: table
+  name: Low energy
+  filters:
+    and:
+    - status != "Done"
+    - status != "Waiting"
+    - energy == "Low"
+  order:
+  - file.name
+  - formula.size
+  - area
+  sort:
+  - property: minutes
+    direction: ASC
+- type: table
+  name: Due soon
+  filters:
+    and:
+    - status != "Done"
+    - if(due, (date(due) - today()).days <= 7, false)
+  order:
+  - file.name
+  - due
+  - formula.when
+  - formula.size
+  - energy
+  sort:
+  - property: due
+    direction: ASC
+- type: table
+  name: By area
+  filters:
+    and:
+    - status != "Done"
+  groupBy:
+    property: area
+    direction: ASC
+  order:
+  - file.name
+  - status
+  - formula.size
+  - energy
+- type: table
+  name: Waiting
+  filters:
+    and:
+    - status == "Waiting"
+  order:
+  - file.name
+  - due
+  - area
+- type: table
+  name: Done this week
+  filters:
+    and:
+    - status == "Done"
+    - if(done_on, (today() - date(done_on)).days <= 6, false)
+  order:
+  - file.name
+  - done_on
+  - area
+- type: table
+  name: This goal
+  filters:
+    and:
+    - file.hasLink(this.file)
+  order:
+  - file.name
+  - status
+  - formula.size
+  - energy
+  - due

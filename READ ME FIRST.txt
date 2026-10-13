@@ -1,0 +1,14 @@
+Life OS Lite - an Obsidian vault by Golden Rock
+================================================================
+
+1. Install Obsidian (free): https://obsidian.md
+2. Unzip this file. Move the "Life OS Lite" folder somewhere you keep documents
+   (not inside another vault).
+3. Open Obsidian > "Open folder as vault" > pick the "Life OS Lite" folder.
+4. The Home note opens. Read "Start Here" first (5 minutes).
+
+No community plugins are needed, so Obsidian's "Restricted mode" can stay on.
+Works on Windows, Mac, Linux, iPhone, iPad and Android.
+
+Questions or a problem with your download: hello@goldenrockadvancements.com
+Not affiliated with or endorsed by Obsidian (Dynalist Inc.).

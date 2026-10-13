@@ -1,0 +1,32 @@
+filters:
+  and:
+  - '!file.inFolder("Templates")'
+  - type == "capture"
+properties:
+  file.name:
+    displayName: Capture
+  note.captured:
+    displayName: Captured
+  note.sorted:
+    displayName: Sorted
+views:
+- type: table
+  name: To sort
+  filters:
+    and:
+    - '!sorted'
+  order:
+  - file.name
+  - captured
+  - sorted
+  sort:
+  - property: captured
+    direction: DESC
+- type: table
+  name: Sorted
+  filters:
+    and:
+    - sorted == true
+  order:
+  - file.name
+  - captured

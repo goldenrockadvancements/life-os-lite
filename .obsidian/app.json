@@ -1,0 +1,10 @@
+{
+  "alwaysUpdateLinks": true,
+  "attachmentFolderPath": "Attachments",
+  "newFileLocation": "current",
+  "showInlineTitle": true,
+  "readableLineLength": true,
+  "propertiesInDocument": "visible",
+  "promptDelete": true,
+  "trashOption": "local"
+}

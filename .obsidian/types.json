@@ -1,0 +1,33 @@
+{
+  "types": {
+    "tags": "tags",
+    "aliases": "aliases",
+    "cssclasses": "multitext",
+    "type": "text",
+    "captured": "date",
+    "sorted": "checkbox",
+    "status": "text",
+    "energy": "text",
+    "minutes": "number",
+    "area": "text",
+    "goal": "text",
+    "due": "date",
+    "focus": "checkbox",
+    "done_on": "date",
+    "why": "text",
+    "next_step": "text",
+    "target": "date",
+    "when": "text",
+    "amount": "number",
+    "repeats": "text",
+    "autopay": "checkbox",
+    "day": "date",
+    "energy_level": "number",
+    "week_of": "date",
+    "moved": "checkbox",
+    "outside": "checkbox",
+    "read": "checkbox",
+    "tidied": "checkbox",
+    "in_bed_on_time": "checkbox"
+  }
+}
